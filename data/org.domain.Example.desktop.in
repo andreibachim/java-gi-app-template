@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=example
+Exec=example
+Icon=org.domain.Example
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=GTK;
+StartupNotify=true
+DBusActivatable=true
