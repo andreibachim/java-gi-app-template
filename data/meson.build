@@ -33,6 +33,14 @@ test('Validate schema file',
      compile_schemas,
      args: ['--strict', '--dry-run', meson.current_source_dir()])
 
+resources = gnome.compile_resources(
+  'org.domain.Example.resources',
+  'org.domain.Example.gresource.xml',
+  'source_dir': get_option('srcdir') / 'main' / 'gresource'
+  'gresource_bundle': true,
+  'install_dir': get_option('datadir') / 'org.domain.Example'
+  'install': true
+)
 
 service_conf = configuration_data()
 service_conf.set('bindir', get_option('prefix') / get_option('bindir'))

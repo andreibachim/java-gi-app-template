@@ -3,33 +3,43 @@
   <requires lib="gtk" version="4.0"/>
   <requires lib="Adw" version="1.0"/>
   <template class="ExampleWindow" parent="AdwApplicationWindow">
-    <property name="title" translatable="yes">Example</property>
-    <property name="default-width">800</property>
-    <property name="default-height">600</property>
-    <property name="content">
-      <object class="AdwToolbarView">
-        <child type="top">
-          <object class="AdwHeaderBar">
+    <property name="default-width">600</property>
+    <property name="default-height">300</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkHeaderBar" id="header_bar">
+            <property name="title-widget">
+              <object class="GtkLabel">
+                <property name="label" translatable="yes">Template application</property>
+                <property name="single-line-mode">True</property>
+                <property name="ellipsize">end</property>
+                <property name="width-chars">5</property>
+                <style>
+                  <class name="title"/>
+                </style>
+              </object>
+            </property>
             <child type="end">
               <object class="GtkMenuButton">
-                <property name="primary">True</property>
                 <property name="icon-name">open-menu-symbolic</property>
-                <property name="tooltip-text" translatable="yes">Main Menu</property>
                 <property name="menu-model">primary_menu</property>
               </object>
             </child>
           </object>
         </child>
-        <property name="content">
+        <child>
           <object class="GtkLabel" id="label">
             <property name="label" translatable="yes">Hello, World!</property>
+            <property name="vexpand">true</property>
             <style>
               <class name="title-1"/>
             </style>
           </object>
-        </property>
+        </child>
       </object>
-    </property>
+    </child>
   </template>
   <menu id="primary_menu">
     <section>
@@ -39,10 +49,14 @@
       </item>
       <item>
         <attribute name="label" translatable="yes">_Keyboard Shortcuts</attribute>
-        <attribute name="action">app.shortcuts</attribute>
+        <attribute name="action">win.show-help-overlay</attribute>
       </item>
       <item>
-        <attribute name="label" translatable="yes">_About Example</attribute>
+        <attribute name="label" translatable="yes">_Say hello!</attribute>
+        <attribute name="action">app.greet</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_About Example application</attribute>
         <attribute name="action">app.about</attribute>
       </item>
     </section>
