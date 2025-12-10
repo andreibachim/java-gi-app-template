@@ -8,7 +8,7 @@ import org.gnome.gio.ApplicationFlags;
 import org.gnome.gio.SimpleAction;
 import org.gnome.glib.Variant;
 
-import static org.javagi.util.Intl.i18n;
+import static org.domain.util.Intl.i18n;
 
 /**
  * ExampleApplication is derived from AdwApplication. The class is registered
@@ -28,7 +28,7 @@ public class ExampleApplication extends Application {
      * instance is created the {@link #init()}  method is automatically run.
      */
     public ExampleApplication() {
-        setApplicationId("org.domain.Example");
+        setApplicationId(Example.APPLICATION_ID);
         setFlags(ApplicationFlags.DEFAULT_FLAGS);
     }
 
@@ -97,3 +97,4 @@ public class ExampleApplication extends Application {
         }
     }
 }
+

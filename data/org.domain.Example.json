@@ -8,9 +8,6 @@
     ],
     "command" : "/app/bin/example",
     "finish-args" : [
-        "--share=network",
-        "--share=ipc",
-        "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland",
         "--env=JAVA_HOME=/app/jre"
@@ -22,15 +19,22 @@
             "build-commands" : [ "/usr/lib/sdk/openjdk/install.sh" ]
         },
         {
-            "name" : "org.domain.Example",
+            "name" : "gradle_build",
             "buildsystem" : "simple",
-            "build-commands" : [ "gradle installDist" ],
+            "build-commands" : [ "gradle install" ],
             "build-options" : {
                 "append-path": "/usr/lib/sdk/openjdk/gradle/bin:/usr/lib/sdk/openjdk/jvm/openjdk-23/bin"
             },
-            "sources" : [
+        	"sources" : [
                 { "type" : "dir", "path" : ".." },
                 "maven-dependencies.json"
+            ]
+        },
+        {
+        	"name" : "meson_build",
+        	"buildsystem" : "meson",
+        	"sources" : [
+                { "type" : "dir", "path" : ".." }
             ]
         }
     ]

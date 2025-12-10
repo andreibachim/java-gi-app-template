@@ -1,0 +1,219 @@
+[
+  {
+    "type": "file",
+    "url": "https://plugins.gradle.org/m2/com/google/code/gson/gson-parent/2.12.1/gson-parent-2.12.1.pom",
+    "sha512": "e099a89999f863e95465baceeba2490fec16032a4eedf0955e3ec230ede9d5e2e6658a3f527a34a651ff3f3121713148e4afd4a03a97f8b0e145f152dae199b7",
+    "dest": "build/repository/com/google/code/gson/gson-parent/2.12.1",
+    "dest-filename": "gson-parent-2.12.1.pom"
+  },
+  {
+    "type": "file",
+    "url": "https://plugins.gradle.org/m2/com/google/code/gson/gson/2.12.1/gson-2.12.1.jar",
+    "sha512": "fafc369544e2d4a89f32c353dcbd012410a64a315a3cae9165d4ead6f8960aef5f77ced84c374d6a09af117748adca571b0426eb0e2864f584debb59707ebc03",
+    "dest": "build/repository/com/google/code/gson/gson/2.12.1",
+    "dest-filename": "gson-2.12.1.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://plugins.gradle.org/m2/com/google/code/gson/gson/2.12.1/gson-2.12.1.pom",
+    "sha512": "49aca8b17b4b4377dd358a356aec85d2105b5c8fca2a88fd4f5b5454a7f7e952980e0754e070adfa7136d01b9442c6efacc989c8a25d9928267c9fe3e869c61f",
+    "dest": "build/repository/com/google/code/gson/gson/2.12.1",
+    "dest-filename": "gson-2.12.1.pom"
+  },
+  {
+    "type": "file",
+    "url": "https://plugins.gradle.org/m2/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.jar",
+    "sha512": "bd6f5650902526d3db06aa1cc7bd36723658166acfabb823aca27d0b2c3814e83ae24a8217ce915c3e194c2c696a102580b4c21ef5dba61f7610bcb8d580f566",
+    "dest": "build/repository/com/google/errorprone/error_prone_annotations/2.36.0",
+    "dest-filename": "error_prone_annotations-2.36.0.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://plugins.gradle.org/m2/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.pom",
+    "sha512": "0c1d663f70a1bec083cdd007b1ee673df144bbfbd4d065c7cad0edba8410bcd1f578902133155a534a1506a82d6a6aa211b4e6c907c4df25b0da4c781caa9008",
+    "dest": "build/repository/com/google/errorprone/error_prone_annotations/2.36.0",
+    "dest-filename": "error_prone_annotations-2.36.0.pom"
+  },
+  {
+    "type": "file",
+    "url": "https://plugins.gradle.org/m2/com/google/errorprone/error_prone_parent/2.36.0/error_prone_parent-2.36.0.pom",
+    "sha512": "8157ba706ab6932cb428ebd295693477491a7439341c95994f492a10cc3b3222b30a3777e61a9f208fcd1623fc613a3a7fd3cc22c95c56c64e3dbb9d3ca5aeed",
+    "dest": "build/repository/com/google/errorprone/error_prone_parent/2.36.0",
+    "dest-filename": "error_prone_parent-2.36.0.pom"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/io/github/jwharm/cairobindings/cairo/1.18.4.2/cairo-1.18.4.2.jar",
+    "sha512": "b9ede971f04608ee34c2e9fb8cbab71a79e2fc46feaab2d48c71fc36ed14e2f83d2ffaabf05f5ae9e9cedb616cde4437fc15898708fdb384dab374f98049cd14",
+    "dest": "build/repository/io/github/jwharm/cairobindings/cairo/1.18.4.2",
+    "dest-filename": "cairo-1.18.4.2.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/io/github/jwharm/cairobindings/cairo/1.18.4.2/cairo-1.18.4.2.module",
+    "sha512": "ea15a91e2267067c75779237380313e3e3a470715b740c76560e0dedc27744983500358063b4a6e4220fa8dabdff3fa29ea82ccf812e1e5e288177ad1593ad0c",
+    "dest": "build/repository/io/github/jwharm/cairobindings/cairo/1.18.4.2",
+    "dest-filename": "cairo-1.18.4.2.module"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/io/github/jwharm/cairobindings/cairo/1.18.4.2/cairo-1.18.4.2.pom",
+    "sha512": "eaaa9a9bd7a390611217f93a1e99e222e6ed1e6b869a2e561261d733c7e355882dfbd60917eafb5ec3f4ee080f953a64b8ec0a2f222ef995bb65b32fd18574d3",
+    "dest": "build/repository/io/github/jwharm/cairobindings/cairo/1.18.4.2",
+    "dest-filename": "cairo-1.18.4.2.pom"
+  },
+  {
+    "type": "file",
+    "url": "https://plugins.gradle.org/m2/io/github/jwharm/flatpak-gradle-generator/io.github.jwharm.flatpak-gradle-generator.gradle.plugin/1.5.0/io.github.jwharm.flatpak-gradle-generator.gradle.plugin-1.5.0.pom",
+    "sha512": "d95ab753c7e295958260ad47da3271089e2e81554eb6bb5ae0acbb2b76dcbbfc8f67088a95b4fca917b882f7c6ccffc6e72a5941312b22f83f7402e3f758ae58",
+    "dest": "build/repository/io/github/jwharm/flatpak-gradle-generator/io.github.jwharm.flatpak-gradle-generator.gradle.plugin/1.5.0",
+    "dest-filename": "io.github.jwharm.flatpak-gradle-generator.gradle.plugin-1.5.0.pom"
+  },
+  {
+    "type": "file",
+    "url": "https://plugins.gradle.org/m2/io/github/jwharm/flatpak-gradle-generator/plugin/1.5.0/plugin-1.5.0.jar",
+    "sha512": "010a05bdf5a7b0338b921577ce9fbff3f221aff8994926c9c4cd6965cf11047ded07485faeb092b7d2bd6ed1973a7171971940841ba52ea080bb382cffcb1115",
+    "dest": "build/repository/io/github/jwharm/flatpak-gradle-generator/plugin/1.5.0",
+    "dest-filename": "plugin-1.5.0.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://plugins.gradle.org/m2/io/github/jwharm/flatpak-gradle-generator/plugin/1.5.0/plugin-1.5.0.module",
+    "sha512": "94948fffea8525b0dcaa23099d671a99995a1cef93208a7795d3c6fdc8f68c68420c2f9451211ff112dac15798e22d43f66aeb93fe5e5f4dbf0d5ae1f417ea97",
+    "dest": "build/repository/io/github/jwharm/flatpak-gradle-generator/plugin/1.5.0",
+    "dest-filename": "plugin-1.5.0.module"
+  },
+  {
+    "type": "file",
+    "url": "https://plugins.gradle.org/m2/io/github/jwharm/flatpak-gradle-generator/plugin/1.5.0/plugin-1.5.0.pom",
+    "sha512": "b090e4a56bfe11148ffa841c6fdb95a8181105365182f6380b3ec38b09d757897e78e087dd92d05d68c2c91f0aa49ce0d9e166aa6bd0b7b92d71a1a73a9ac494",
+    "dest": "build/repository/io/github/jwharm/flatpak-gradle-generator/plugin/1.5.0",
+    "dest-filename": "plugin-1.5.0.pom"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/adw/0.13.0-RC1/adw-0.13.0-RC1.jar",
+    "sha512": "18ce8ecb7b6ccc41ca1f405cc93c0e766e8d14ff700851431b56271c50943a826f8a6eabe051976557a3f88f36494ec83209b4946aaea072e9cdec08fcaf5915",
+    "dest": "build/repository/org/java-gi/adw/0.13.0-RC1",
+    "dest-filename": "adw-0.13.0-RC1.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/adw/0.13.0-RC1/adw-0.13.0-RC1.module",
+    "sha512": "9170350ce7d39db3811ab69c5f467d696331995be5c0309d50f17897636b2a924e4edfccec6edb1bc30664f289c27d197658cf466873431b4ac9936473d70662",
+    "dest": "build/repository/org/java-gi/adw/0.13.0-RC1",
+    "dest-filename": "adw-0.13.0-RC1.module"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/adw/0.13.0-RC1/adw-0.13.0-RC1.pom",
+    "sha512": "8f7ec4c25c7ca4fee264ae0959840be1aaa240c00b2ae4273984cac7e42c9322cbe226580a51d8f8e8a49b5674dd95b60f54eab375e4916324138f6e4a41a4e4",
+    "dest": "build/repository/org/java-gi/adw/0.13.0-RC1",
+    "dest-filename": "adw-0.13.0-RC1.pom"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/gdkpixbuf/0.13.0-RC1/gdkpixbuf-0.13.0-RC1.jar",
+    "sha512": "b7a1a339a2c5ee92475ba7decea61217d361abf180e6b1a6d91984c7a8e8f946a6d1a4b84f7f4dea3850a60bf2af4b386cfbf7b33cc16f1091c1680b1a22ea7a",
+    "dest": "build/repository/org/java-gi/gdkpixbuf/0.13.0-RC1",
+    "dest-filename": "gdkpixbuf-0.13.0-RC1.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/gdkpixbuf/0.13.0-RC1/gdkpixbuf-0.13.0-RC1.module",
+    "sha512": "f0ca868bb37cad6c137e5504f109dfe7078277f517e9ed35731116643774c7e3cc3066e0fd583c108af6a11c2735f0d4bcad1b28396aa9e8fbb8ee65666d52ca",
+    "dest": "build/repository/org/java-gi/gdkpixbuf/0.13.0-RC1",
+    "dest-filename": "gdkpixbuf-0.13.0-RC1.module"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/gdkpixbuf/0.13.0-RC1/gdkpixbuf-0.13.0-RC1.pom",
+    "sha512": "c2ffac2c0ce5968665e4f0030e3687d1ed253c641b8195e0110e25384e15b80d96ca2b0650b41482bcf90e7edd96a1081e8e961a83c547558a8cb5a893703aef",
+    "dest": "build/repository/org/java-gi/gdkpixbuf/0.13.0-RC1",
+    "dest-filename": "gdkpixbuf-0.13.0-RC1.pom"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/glib/0.13.0-RC1/glib-0.13.0-RC1.jar",
+    "sha512": "d9ff957447c253ffeb034f471ae9b664e998736c98ccf8b2fea99d5c30b4ff3c49be5427ce42908a0fdf6e114cca57aa9c350d3c44efc5f92136f106ae8b040d",
+    "dest": "build/repository/org/java-gi/glib/0.13.0-RC1",
+    "dest-filename": "glib-0.13.0-RC1.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/glib/0.13.0-RC1/glib-0.13.0-RC1.module",
+    "sha512": "843a66c084499702c86284f0eb52ce4e8dd1ae9f7ce8b0bb6d5d213ed6534e23916c6e4af538f282659c93f5114225bc1ab45c92fc418cfac2d658162fabc081",
+    "dest": "build/repository/org/java-gi/glib/0.13.0-RC1",
+    "dest-filename": "glib-0.13.0-RC1.module"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/glib/0.13.0-RC1/glib-0.13.0-RC1.pom",
+    "sha512": "97b9f4d338aa1b5b77a59b62bc8bce820077ef93eba83e60799b6c8567ae3b19f65eaf3dd59c2333a22e7158a18b84246221f1298f70a3c93f6f1a2817e3be79",
+    "dest": "build/repository/org/java-gi/glib/0.13.0-RC1",
+    "dest-filename": "glib-0.13.0-RC1.pom"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/gtk/0.13.0-RC1/gtk-0.13.0-RC1.jar",
+    "sha512": "02b2beb692a48677ea455eafc22b825eb98194e208bb1e04752082c997eae98fbb82f79cae0b9415a2c6a8b8da79be51302a7449306f4b8a4546bb69583333b0",
+    "dest": "build/repository/org/java-gi/gtk/0.13.0-RC1",
+    "dest-filename": "gtk-0.13.0-RC1.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/gtk/0.13.0-RC1/gtk-0.13.0-RC1.module",
+    "sha512": "42c9ce9e7cb8b2ec459bcaac821cacbee1b200939421869e1e3b3330d4b30d69d8bc83c01ccedc5b13f54734b1765d71359cd30f869453f053680c33ec299a57",
+    "dest": "build/repository/org/java-gi/gtk/0.13.0-RC1",
+    "dest-filename": "gtk-0.13.0-RC1.module"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/gtk/0.13.0-RC1/gtk-0.13.0-RC1.pom",
+    "sha512": "8431ead97d41b872f3bcae991239271affbecf078b9c3392fbc8b2826f856e7c9b8c4b448d2f6a95945dac21f0a9998bfd2f30f67b909cdbb0a07c65a85d62e3",
+    "dest": "build/repository/org/java-gi/gtk/0.13.0-RC1",
+    "dest-filename": "gtk-0.13.0-RC1.pom"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/harfbuzz/0.13.0-RC1/harfbuzz-0.13.0-RC1.jar",
+    "sha512": "5880c622258efe6e97805b71f7ef6e8a0980932475ff76a03a16cb0a13d888ce445e453c7a793bd7019c4451c51ecab75ddbf0f3e6bd6ab98c444671e963c240",
+    "dest": "build/repository/org/java-gi/harfbuzz/0.13.0-RC1",
+    "dest-filename": "harfbuzz-0.13.0-RC1.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/harfbuzz/0.13.0-RC1/harfbuzz-0.13.0-RC1.module",
+    "sha512": "a684ab6399c8e23991fe01010431e3619276a7abaccc7f0a98c29d5ad48c7576d3fe54471c9f0da016291a5ac22711f7f027fe7ed97479659522d0e4e4ba35b3",
+    "dest": "build/repository/org/java-gi/harfbuzz/0.13.0-RC1",
+    "dest-filename": "harfbuzz-0.13.0-RC1.module"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/harfbuzz/0.13.0-RC1/harfbuzz-0.13.0-RC1.pom",
+    "sha512": "24cb0625bdc96bf175df6c36ea7ca260a91603f5e632f99c3c1e78c02b3203f59dd3e06e6bcdcea03e5fe6268d1f3405a57067f63395f30a8ef905e702a19b21",
+    "dest": "build/repository/org/java-gi/harfbuzz/0.13.0-RC1",
+    "dest-filename": "harfbuzz-0.13.0-RC1.pom"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/pango/0.13.0-RC1/pango-0.13.0-RC1.jar",
+    "sha512": "b02a5e6100cc64dd56dc83274a1e21fd12de2bb1d46c78fed0f88cfae19377f642886a0137418fdf486b26649a8d5ddef178848b2f1803794048d0f05d10c840",
+    "dest": "build/repository/org/java-gi/pango/0.13.0-RC1",
+    "dest-filename": "pango-0.13.0-RC1.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/pango/0.13.0-RC1/pango-0.13.0-RC1.module",
+    "sha512": "9c7d82df5eda06d02c4915f617adbfa949612612090a2acf02a137cea1a874fc02375d46168721134b86884f142ef30b0a3a156046265c218d746c4acf0ba876",
+    "dest": "build/repository/org/java-gi/pango/0.13.0-RC1",
+    "dest-filename": "pango-0.13.0-RC1.module"
+  },
+  {
+    "type": "file",
+    "url": "https://repo.maven.apache.org/maven2/org/java-gi/pango/0.13.0-RC1/pango-0.13.0-RC1.pom",
+    "sha512": "7189233d867732ada71628c8b2a331ebc98a457dc1a4981e7489b352be5177283f55a7f785de0f3285038bb16c7c56e141fe788aeb7fbaf12a1465165688f491",
+    "dest": "build/repository/org/java-gi/pango/0.13.0-RC1",
+    "dest-filename": "pango-0.13.0-RC1.pom"
+  }
+]

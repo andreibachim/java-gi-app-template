@@ -4,7 +4,6 @@ plugins {
 }
 
 repositories {
-    mavenLocal()
     mavenCentral()
     maven { url = "build/repository" } // used by flatpak-builder
 }
@@ -25,8 +24,11 @@ java {
     }
 }
 
-tasks.named('installDist') {
-    destinationDir = file('/app')
+// This task will install into the "/app" directory.
+// We can't use "installDist" because it requires an empty target directory.
+task install(type: Copy) {
+	from installDist
+	into '/app'
 }
 
 application {
@@ -34,4 +36,3 @@ application {
     mainClass = "org.domain.Example"
     applicationDefaultJvmArgs += "--enable-native-access=ALL-UNNAMED"
 }
-

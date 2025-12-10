@@ -1,14 +1,21 @@
 package org.domain;
 
 import org.javagi.base.GErrorException;
-import org.javagi.util.Intl;
+import org.javagi.interop.Interop;
 import org.gnome.gio.Resource;
+
+import org.domain.util.Intl;
 
 /**
  * The "main" class, here we initialize gettext, register the compiled
  * gresource bundle and start an Application instance.
  */
 public class Example {
+
+    public static final String APPLICATION_ID = "org.domain.Example";
+    public static final String LOCALE_DIR = "/usr/share/locale";
+    public static final String GETTEXT_DOMAIN = "Example";
+    public static final String RESOURCE_DIR = "/app/share/" + APPLICATION_ID;
 
     /**
      * Run the application
@@ -18,11 +25,11 @@ public class Example {
      */
     public static void main(String[] args) throws GErrorException {
         // Initialize gettext
-        Intl.bindtextdomain("Example", "build/locale");
-        Intl.textdomain("Example");
+        Intl.bindtextdomain(GETTEXT_DOMAIN, LOCALE_DIR);
+        Intl.textdomain(GETTEXT_DOMAIN);
         
         // Load gresource
-        var resource = Resource.load("build/gresource/example.gresource");
+        var resource = Resource.load(RESOURCE_DIR + "/org.domain.Example.gresource");
         resource.resourcesRegister();
 
         // Create and run the application
@@ -30,3 +37,4 @@ public class Example {
         app.run(args);
     }
 }
+

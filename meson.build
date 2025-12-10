@@ -7,17 +7,6 @@ project('example',
 i18n = import('i18n')
 gnome = import('gnome')
 
-srcdir = meson.project_source_root() / 'src'
-
-gradlew = find_program('gradlew', required: true)
-
-app_bin = custom_target (
-  'gradle-build',
-  command: [gradlew, 'installDist'],
-  build_always: true,
-  console: true
-)
-
 subdir('data')
 subdir('po')
 
