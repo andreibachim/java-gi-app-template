@@ -39,6 +39,9 @@ import java.util.List;
 /**
  * Utility class to translate text to the current locale using GNU Gettext.
  * <p>
+ * This is a temporary copy of the Intl class in java-gi itself, with some
+ * additional functionality to load the gettext shared library.
+ * <p>
  * To use this class, call {@link #bindtextdomain} and {@link #textdomain}
  * at the start of your application, ideally at the top of your {@code main()}
  * method, but in any case before Gtk is initialized. For every text message

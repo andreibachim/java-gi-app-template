@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    implementation "org.java-gi:adw:0.13.0-RC1"
+    implementation "org.java-gi:adw:0.13.0"
 }
 
 // Generate a file with all dependency urls for the offline flatpak build
@@ -25,7 +25,6 @@ java {
 }
 
 // This task will install into the "/app" directory.
-// We can't use "installDist" because it requires an empty target directory.
 task install(type: Copy) {
 	from installDist
 	into '/app'
