@@ -13,8 +13,8 @@ import org.domain.util.Intl;
 public class Example {
 
     public static final String APPLICATION_ID = "org.domain.Example";
-    public static final String LOCALE_DIR = "/usr/share/locale";
-    public static final String GETTEXT_DOMAIN = "Example";
+    public static final String LOCALE_DIR = "/app/share/locale";
+    public static final String GETTEXT_DOMAIN = "example";
     public static final String RESOURCE_DIR = "/app/share/" + APPLICATION_ID;
 
     /**

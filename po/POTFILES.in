@@ -3,5 +3,5 @@
 data/org.domain.Example.desktop.in
 data/org.domain.Example.metainfo.xml.in
 data/org.domain.Example.gschema.xml
-src/main/java/org/domain/example/ExampleApplication.java
-src/main/resources/window.ui
+src/main/java/org/domain/ExampleApplication.java
+src/main/gresource/example-window.ui
