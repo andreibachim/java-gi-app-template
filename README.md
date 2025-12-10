@@ -82,8 +82,8 @@ template application is "example".
 All source files that contain translatable strings, must be added
 to `po/POTFILES.in`.
 
-To create translatable strings in Java, use the `Intl::i18n`.
-Comments with translation instructions must start with
+To create translatable strings in Java, use the `Intl::i18n`
+method. Comments with translation instructions must start with
 `TRANSLATORS: ` to be included in the po-files.
 
 Note: The `Intl` class is currently included in this
