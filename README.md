@@ -10,7 +10,7 @@ Meson. The Flatpak manifest will first run Gradle and then Meson.
 
 Features:
 
-* GNOME 48 & Adwaita example application, written in Java
+* GNOME 48 & Adwaita example application, written in Java (OpenJDK 23)
 * Compilation and installation of settings schema and gresource bundle
 * Translated with GNU Gettext
 * Template icons, desktop file, metainfo file
