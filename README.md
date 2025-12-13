@@ -76,18 +76,18 @@ This will create a compiled gresource bundle in the
 
 ### Translations
 
-Translations work with GNU gettext. The textdomain used in the
-template application is "example".
+The application is translations with GNU gettext. It is
+initialized in the `main` method in `Example.java`.
 
-All source files that contain translatable strings, must be added
-to `po/POTFILES.in`.
+With gettext, all translatable strings in Java source code,
+UI files, and other resources, are translated in the same way.
+The only requirement is that all files that contain translatable strings, are added to `po/POTFILES.in`.
 
-To create translatable strings in Java, use the `Intl::i18n`
-method. Comments with translation instructions must start with
-`TRANSLATORS: ` to be included in the po-files.
+To create translatable strings in Java, add a static import of
+`org.javagi.util.Intl.i18n` and use `i18n("text to translate")`. Comments that start with `TRANSLATORS:` will be included in the po-files.
 
-Note: The `Intl` class is currently included in this
-repository, but will eventually be available in Java-GI itself.
+More information about gettext and meson is available on the
+[meson website](https://mesonbuild.com/Localisation.html).
 
 To recompile the `example.pot` file, run:
 
