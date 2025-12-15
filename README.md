@@ -112,7 +112,7 @@ file, regenerate the sources file that is used by flatpak-builder
 in the offline build:
 
 ```
-gradle flatpak-gradle-generator
+./gradlew flatpak-gradle-generator --no-configuration-cache
 ```
 
 ## Uninstalling
