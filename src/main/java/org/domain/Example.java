@@ -3,6 +3,8 @@ package org.domain;
 import org.javagi.base.GErrorException;
 import org.javagi.interop.Interop;
 import org.javagi.util.Intl;
+import org.gnome.glib.GLib;
+import org.gnome.glib.LogLevelFlags;
 import org.gnome.gio.Resource;
 
 /**
@@ -24,8 +26,12 @@ public class Example {
      */
     public static void main(String[] args) throws GErrorException {
         // Initialize gettext
-        Intl.bindtextdomain(GETTEXT_DOMAIN, LOCALE_DIR);
-        Intl.textdomain(GETTEXT_DOMAIN);
+        try {
+            Intl.bindtextdomain(GETTEXT_DOMAIN, LOCALE_DIR);
+            Intl.textdomain(GETTEXT_DOMAIN);
+        } catch (Exception _) {
+        	GLib.log(APPLICATION_ID, LogLevelFlags.LEVEL_WARNING, "Cannot initialize gettext\n");
+        }
         
         // Load gresource
         var resource = Resource.load(RESOURCE_DIR + "/org.domain.Example.gresource");
