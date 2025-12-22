@@ -29,7 +29,7 @@ public class Example {
         try {
             Intl.bindtextdomain(GETTEXT_DOMAIN, LOCALE_DIR);
             Intl.textdomain(GETTEXT_DOMAIN);
-        } catch (Exception _) {
+        } catch (Throwable _) {
         	GLib.log(APPLICATION_ID, LogLevelFlags.LEVEL_WARNING, "Cannot initialize gettext\n");
         }
         
