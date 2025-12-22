@@ -1,4 +1,4 @@
-# Java-GI application template
+# Java-GI flatpak application template
 
 This project can be used as a template for a GNOME application, 
 developed with Java-GI. The project is setup to be built and
@@ -56,13 +56,17 @@ You can open the project folder in IntelliJ IDEA and it will
 automatically load the Gradle project. To run the application
 from IntelliJ, start the `application` gradle task.
 
-Be aware that a locally running application cannot save and load settings, but you can load the gresource bundle, provided it is
-compiled first. You can automate that with a custom Gradle task:
+Be aware that a locally running application cannot load settings
+and translations, but you can load the gresource bundle, provided
+it is compiled first. You can automate that with a custom Gradle
+task:
 
 ```groovy
 tasks.register('compileResources', Exec) {
-    workingDir 'src/main/gresource'
-    commandLine 'glib-compile-resources', 'helloworld.gresource.xml'
+    commandLine 'glib-compile-resources',
+                '--sourcedir=src/main/gresource',
+                '--target=build/org.domain.Example.gresource',
+                'data/org.domain.Example.gresource.xml'
 }
 
 tasks.named('compileJava') {
@@ -70,9 +74,9 @@ tasks.named('compileJava') {
 }
 ```
 
-This will create a compiled gresource bundle in the
-`src/main/gresource` folder. Change the `RESOURCE_DIR` in
-`Example.java` accordingly.
+This will create a compiled gresource bundle in the `build`
+folder, so don't forget to change the `RESOURCE_DIR` in
+`Example.java` to `"build"`.
 
 ### Translations
 
@@ -81,10 +85,13 @@ initialized in the `main` method in `Example.java`.
 
 With gettext, all translatable strings in Java source code,
 UI files, and other resources, are translated in the same way.
-The only requirement is that all files that contain translatable strings, are added to `po/POTFILES.in`.
+The only requirement is that all files that contain translatable
+strings, are added to `po/POTFILES.in`.
 
 To create translatable strings in Java, add a static import of
-`org.javagi.util.Intl.i18n` and use `i18n("text to translate")`. Comments that start with `TRANSLATORS:` will be included in the po-files.
+`org.javagi.util.Intl.i18n` and use `i18n("text to translate")`.
+Comments that start with `TRANSLATORS:` will be included in the
+po-files.
 
 More information about gettext and meson is available on the
 [meson website](https://mesonbuild.com/Localisation.html).
