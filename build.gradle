@@ -35,3 +35,13 @@ application {
     mainClass = "org.domain.Example"
     applicationDefaultJvmArgs += "--enable-native-access=ALL-UNNAMED"
 }
+
+tasks.register('compileResources', Exec) {
+    workingDir 'data'
+    commandLine 'glib-compile-resources', 'org.domain.Example.gresource.xml'
+}
+
+tasks.named('compileJava') {
+    dependsOn compileResources
+}
+

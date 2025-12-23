@@ -1,5 +1,6 @@
 package org.domain;
 
+import org.gnome.gtk.Image;
 import org.javagi.base.GErrorException;
 import org.javagi.interop.Interop;
 import org.javagi.util.Intl;
@@ -16,7 +17,7 @@ public class Example {
     public static final String APPLICATION_ID = "org.domain.Example";
     public static final String LOCALE_DIR = "/app/share/locale";
     public static final String GETTEXT_DOMAIN = "example";
-    public static final String RESOURCE_DIR = "/app/share/" + APPLICATION_ID;
+    public static final String RESOURCE_DIR = "data";
 
     /**
      * Run the application
@@ -26,20 +27,24 @@ public class Example {
      */
     public static void main(String[] args) throws GErrorException {
         // Initialize gettext
-        try {
-            Intl.bindtextdomain(GETTEXT_DOMAIN, LOCALE_DIR);
-            Intl.textdomain(GETTEXT_DOMAIN);
-        } catch (Throwable _) {
-        	GLib.log(APPLICATION_ID, LogLevelFlags.LEVEL_WARNING, "Cannot initialize gettext\n");
-        }
+//        try {
+//            Intl.bindtextdomain(GETTEXT_DOMAIN, LOCALE_DIR);
+//            Intl.textdomain(GETTEXT_DOMAIN);
+//        } catch (Throwable _) {
+//        	GLib.log(APPLICATION_ID, LogLevelFlags.LEVEL_WARNING, "Cannot initialize gettext\n");
+//        }
         
         // Load gresource
         var resource = Resource.load(RESOURCE_DIR + "/org.domain.Example.gresource");
         resource.resourcesRegister();
 
+        var image = Image.fromResource("/org/domain/icons/hicolor/scalable/apps/org.domain.Example.svg");
+
         // Create and run the application
         var app = new ExampleApplication();
         app.run(args);
+
+
     }
 }
 
